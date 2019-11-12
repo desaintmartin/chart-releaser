@@ -22,6 +22,10 @@ $ go mod download
 $ go install
 ```
 
+### Docker (for Continuous Integration)
+
+You can use the quay.io/helmpack/chart-releaser Docker repository to run containers with Chart Releaser. It is built on top of Alpine and its default entry-point is cr. See the `Dockerfile` for more informations.
+
 ## Usage
 
 Currently, `cr` can create GitHub Releases from a set of charts packaged up into a directory and create an `index.yaml` file for the chart repository from GitHub Releases.
